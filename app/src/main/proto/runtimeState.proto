@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.example.enigma2048";
+option java_multiple_files = true;
+
+message RuntimeState {
+  int32 score = 1;
+  int32 moves = 2;
+  int32 high = 3;
+
+  repeated int32 boardCell = 4;
+
+  bool previousGame = 5;
+}
